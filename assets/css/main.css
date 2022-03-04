@@ -3627,10 +3627,11 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgb(0, 0, 0);
+		background: rgba(255, 255, 255, 0.801);
+		border-bottom: 1px solid black;
 		height: 4rem;
 		line-height: 4rem;
-		margin: -4rem auto 0 auto;
+		margin: -5.5rem auto 0 auto;
 		overflow: hidden;
 		padding: 0 2rem 0 0;
 		position: fixed; 
@@ -3640,7 +3641,7 @@ input, select, textarea {
 		/* width: calc(100% - 4rem); */
 		width: 100%;
 		/* max-width: 72rem; */
-		z-index: 2;
+		z-index: 7; /*adding this helps it overlap other elements*/
 	}
 
 		#nav ul.divided li {
@@ -3664,7 +3665,8 @@ input, select, textarea {
 		}
 
 		#nav a {
-			color: #ffffff;
+			color: #000000;
+			background-color: rgba(255, 255, 255, 0.801);
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
